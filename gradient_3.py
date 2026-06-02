@@ -153,6 +153,8 @@ Tweet 5 - OPEN QUESTION: A deep technical question to generate debate.
 End with the most relevant hashtags: #MachineLearning #AI and one specific to the topic.
 
 CRITICAL RULES:
+- NEVER cut a tweet mid-sentence. If it's too long, rewrite it shorter from scratch.
+- Each tweet must be a complete, standalone thought. No cliffhangers or unfinished sentences.
 - Each tweet MUST be ≤ 280 characters
 - Number each tweet with [1/5], [2/5], etc. AT THE START
 - Separate tweets with "---"
