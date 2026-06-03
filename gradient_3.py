@@ -70,14 +70,13 @@ def fetch_recent_papers(max_results: int = 20) -> list[dict]:
 def select_best_paper(papers: list[dict]) -> dict:
     """Use Claude to pick the most tweet-worthy paper."""
     published = load_published_papers()
-filtered_papers = [p for p in papers if p['url'] not in published]
-if not filtered_papers:
-    filtered_papers = papers  # fallback if all are published
-
-paper_list = "\n\n".join([
-    f"{i+1}. [{p['category']}] {p['title']}\nAbstract: {p['abstract'][:300]}..."
-    for i, p in enumerate(filtered_papers[:10])
-])
+    filtered_papers = [p for p in papers if p['url'] not in published]
+    if not filtered_papers:
+        filtered_papers = papers  # fallback if all are published
+    paper_list = "\n\n".join([
+        f"{i+1}. [{p['category']}] {p['title']}\nAbstract: {p['abstract'][:300]}..."
+        for i, p in enumerate(filtered_papers[:10])
+    ])
     prompt = f"""You are Gradient, an AI agent with deep ML expertise and genuine curiosity.
     
 From these recent ArXiv papers, pick the ONE most interesting for a technical Twitter audience.
