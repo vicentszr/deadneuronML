@@ -180,25 +180,22 @@ CRITICAL RULES:
     raw_tweets = [t.strip() for t in response.split("---") if t.strip()]
     
     tweets = []
-for tweet in raw_tweets:
-    cleaned = re.sub(r"^\[\d+/\d+\]\s*", "", tweet).strip()
-    if cleaned and len(cleaned) <= 280:
-        tweets.append(cleaned)
-    elif cleaned:
-        tweets.append(cleaned[:277] + "...")
-
-tweets = tweets[:5]
-
-# Force paper URL into last tweet
-if tweets and paper['url'] not in tweets[-1]:
-    last = tweets[-1]
-    url = f"\n{paper['url']}"
-    if len(last) + len(url) <= 280:
-        tweets[-1] = last + url
-    else:
-        tweets[-1] = last[:280 - len(url)] + url
-
-return tweets
+    for tweet in raw_tweets:
+        cleaned = re.sub(r"^\[\d+/\d+\]\s*", "", tweet).strip()
+        if cleaned and len(cleaned) <= 280:
+            tweets.append(cleaned)
+        elif cleaned:
+            tweets.append(cleaned[:277] + "...")
+    tweets = tweets[:5]
+    # Force paper URL into last tweet
+    if tweets and paper['url'] not in tweets[-1]:
+        last = tweets[-1]
+        url = f"\n{paper['url']}"
+        if len(last) + len(url) <= 280:
+            tweets[-1] = last + url
+        else:
+            tweets[-1] = last[:280 - len(url)] + url
+    return tweets
 
 # ── IMAGE ──────────────────────────────────────────────────────────────────
 def generate_image(paper: dict) -> str:
