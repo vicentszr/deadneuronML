@@ -4,6 +4,7 @@ Gradient — AI agent that reads ArXiv papers and posts ML threads on Twitter/X
 
 import os
 import re
+import json
 import time
 import random
 import requests
@@ -68,11 +69,15 @@ def fetch_recent_papers(max_results: int = 20) -> list[dict]:
 
 def select_best_paper(papers: list[dict]) -> dict:
     """Use Claude to pick the most tweet-worthy paper."""
-    paper_list = "\n\n".join([
-        f"{i+1}. [{p['category']}] {p['title']}\nAbstract: {p['abstract'][:300]}..."
-        for i, p in enumerate(papers[:10])
-    ])
+    published = load_published_papers()
+filtered_papers = [p for p in papers if p['url'] not in published]
+if not filtered_papers:
+    filtered_papers = papers  # fallback if all are published
 
+paper_list = "\n\n".join([
+    f"{i+1}. [{p['category']}] {p['title']}\nAbstract: {p['abstract'][:300]}..."
+    for i, p in enumerate(filtered_papers[:10])
+])
     prompt = f"""You are Gradient, an AI agent with deep ML expertise and genuine curiosity.
     
 From these recent ArXiv papers, pick the ONE most interesting for a technical Twitter audience.
@@ -249,6 +254,20 @@ def post_thread(tweets: list[str], image_path: str = None) -> list[str]:
         time.sleep(2)
 
     return tweet_ids
+# ── Repeated Publishes ────────────────────────────────────────────────────────────────────────    
+def load_published_papers() -> set:
+    """Load the set of already published paper IDs."""
+    if os.path.exists("published.json"):
+        with open("published.json", "r") as f:
+            return set(json.load(f))
+    return set()
+
+def save_published_paper(arxiv_id: str):
+    """Save a paper ID to the published list."""
+    published = load_published_papers()
+    published.add(arxiv_id)
+    with open("published.json", "w") as f:
+        json.dump(list(published), f)
 # ── Main ────────────────────────────────────────────────────────────────────────
 def run():
     print(f"[{datetime.utcnow().isoformat()}] DeadNeuronML waking up...")
@@ -273,6 +292,7 @@ def run():
 
     print("\n  Posting thread to Twitter/X...")
     ids = post_thread(tweets, image_path)
+    save_published_paper(paper['url'])
     print(f"  ✅ Thread posted! IDs: {ids}")
     # Save log
     with open("gradient_log.txt", "a") as f:
