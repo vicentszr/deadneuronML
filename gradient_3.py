@@ -40,15 +40,14 @@ def fetch_recent_papers(max_results: int = 20) -> list[dict]:
         f"sortBy=submittedDate&sortOrder=descending&"
         f"max_results={max_results}"
     )
-
-   for attempt in range(3):
-    try:
-        response = requests.get(url, timeout=30)
-        break
-    except requests.exceptions.ReadTimeout:
-        if attempt == 2:
-            raise
-        time.sleep(10)
+    for attempt in range(3):
+        try:
+            response = requests.get(url, timeout=30)
+            break
+        except requests.exceptions.ReadTimeout:
+            if attempt == 2:
+                raise
+            time.sleep(10)
     response.raise_for_status()
 
     root = ET.fromstring(response.text)
