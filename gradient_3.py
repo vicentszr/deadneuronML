@@ -137,8 +137,8 @@ URL: {paper['url']}
 THREAD STRUCTURE (exactly 5 tweets):
 
 Tweet 1 - HOOK: Start with the most surprising or counterintuitive idea from the paper.
-Include the paper title in quotes and the link at the end.
-Must hook immediately. End with 🧵
+Include the paper title in quotes. End with 🧵
+Do NOT include the URL here.
 
 Tweet 2 - THE PROBLEM: What problem do they solve? Explain the math/technical intuition clearly.
 Use analogies if they help. Max 280 characters.
@@ -151,6 +151,7 @@ What implication does it have for the field? What does it open up?
 
 Tweet 5 - OPEN QUESTION: A deep technical question to generate debate.
 End with the most relevant hashtags: #MachineLearning #AI and one specific to the topic.
+Then on a new line, put the paper URL exactly as provided: {paper['url']}
 
 CRITICAL RULES:
 - NEVER cut a tweet mid-sentence. If it's too long, rewrite it shorter from scratch.
