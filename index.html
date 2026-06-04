@@ -669,6 +669,7 @@ function openPanel(paper) {
 }
 
 function closePanel() {
+  window.speechSynthesis.cancel();
   document.getElementById('agent-panel').classList.remove('open');
 }
 
@@ -722,6 +723,21 @@ Write in first person as DeadNeuronML. Be precise, technical but not dry. No bul
     const textEl = document.getElementById('agent-text');
     let i = 0;
     const cursor = '<span class="cursor-blink"></span>';
+
+    // Text to speech
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.rate = 0.9;
+    utterance.pitch = 0.8;
+    utterance.volume = 1;
+    const voices = window.speechSynthesis.getVoices();
+    const preferred = voices.find(v => v.lang === 'en-US' && v.name.toLowerCase().includes('male'))
+      || voices.find(v => v.lang === 'en-US')
+      || voices[0];
+    if (preferred) utterance.voice = preferred;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
+
+    typeChar();
 
     function typeChar() {
       if (i < text.length) {
