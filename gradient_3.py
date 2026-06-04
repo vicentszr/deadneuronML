@@ -212,23 +212,25 @@ CRITICAL RULES:
 # ── IMAGE ──────────────────────────────────────────────────────────────────
 def generate_image(paper: dict) -> str:
     """Generate an image for the paper using DALL-E."""
-    import base64
     client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
     
     prompt = f"Abstract scientific visualization of: {paper['title'][:100]}. Dark background, neural network nodes, glowing blue and purple connections, minimalist, no text, cinematic"
     
     response = client.images.generate(
-        model="gpt-image-1",
+        model="dall-e-3",
         prompt=prompt,
         size="1024x1024",
-        quality="auto",
+        quality="standard",
         n=1,
     )
     
-    image_data = base64.b64decode(response.data[0].b64_json)
+    image_url = response.data[0].url
+    img_response = requests.get(image_url, timeout=30)
     img_path = "tweet_image.png"
     with open(img_path, "wb") as f:
-        f.write(image_data)
+        f.write(img_response.content)
+    
+    return img_path
     
     return img_path
 # ── Twitter/X ──────────────────────────────────────────────────────────────────
