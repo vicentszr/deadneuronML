@@ -42,7 +42,7 @@
     overflow: hidden;
   }
 
-  #three-canvas { position: absolute; inset: 0; z-index: 0; cursor: grab; }
+  #three-canvas { position: absolute; inset: 0; z-index: 0; cursor: grab; pointer-events: none; }
   #three-canvas:active { cursor: grabbing; }
 
   .hero-content {
@@ -524,7 +524,7 @@
   let rotX = 0, rotY = 0;
   let velX = 0, velY = 0;
 
-  canvas.addEventListener('mousedown', e => {
+  document.getElementById('hero').addEventListener('mousedown', e => {
     isDragging = true;
     prevMouse = { x: e.clientX, y: e.clientY };
   });
