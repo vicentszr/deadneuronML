@@ -136,6 +136,14 @@ You write in English. Mix technical terms naturally."""
 
 
 def generate_thread(paper: dict) -> list[str]:
+    previous = load_knowledge()
+    knowledge_context = ""
+    if previous:
+        recent = previous[-10:]
+        knowledge_context = "Previous papers covered:\n" + "\n".join([
+            f"- {p['title']} ({p['category']})"
+            for p in recent
+        ])
     """Generate a Twitter/X thread from a paper."""
     prompt = f"""Generate a Twitter thread about this ML/AI paper for a technical audience.
 
@@ -162,6 +170,10 @@ What implication does it have for the field? What does it open up?
 Tweet 5 - OPEN QUESTION: A deep technical question to generate debate.
 End with the most relevant hashtags: #MachineLearning #AI and one specific to the topic.
 Then on a new line, put the paper URL exactly as provided: {paper['url']}
+PREVIOUS KNOWLEDGE:
+{knowledge_context}
+
+If relevant, mention connections to previous papers naturally in tweet 4. Don't force it if there's no real connection.
 
 CRITICAL RULES:
 - NEVER cut a tweet mid-sentence. If it's too long, rewrite it shorter from scratch.
@@ -279,6 +291,28 @@ def save_published_paper(arxiv_id: str):
     published.add(arxiv_id)
     with open("published.json", "w") as f:
         json.dump(list(published), f)
+def load_knowledge() -> list:
+    """Load previously published papers knowledge."""
+    if os.path.exists("knowledge.json"):
+        with open("knowledge.json", "r") as f:
+            return json.load(f)
+    return []
+
+def save_knowledge(paper: dict, tweets: list):
+    """Save paper knowledge for future reference."""
+    knowledge = load_knowledge()
+    entry = {
+        "title": paper['title'],
+        "url": paper['url'],
+        "category": paper['category'],
+        "key_concept": tweets[1] if len(tweets) > 1 else "",
+        "date": datetime.utcnow().isoformat()
+    }
+    knowledge.append(entry)
+    # Keep only last 30 papers
+    knowledge = knowledge[-30:]
+    with open("knowledge.json", "w") as f:
+        json.dump(knowledge, f, indent=2)
 # ── Main ────────────────────────────────────────────────────────────────────────
 def run():
     print(f"[{datetime.utcnow().isoformat()}] DeadNeuronML waking up...")
@@ -304,6 +338,7 @@ def run():
     print("\n  Posting thread to Twitter/X...")
     ids = post_thread(tweets, image_path)
     save_published_paper(paper['url'])
+    save_knowledge(paper, tweets)
     print(f"  ✅ Thread posted! IDs: {ids}")
     # Save log
     with open("gradient_log.txt", "a") as f:
