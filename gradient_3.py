@@ -197,7 +197,12 @@ CRITICAL RULES:
         if cleaned and len(cleaned) <= 280:
             tweets.append(cleaned)
         elif cleaned:
-            tweets.append(cleaned[:277] + "...")
+            # Cut at last space before 277 to avoid cutting words
+            truncated = cleaned[:277]
+            last_space = truncated.rfind(" ")
+            if last_space > 0:
+                truncated = truncated[:last_space]
+            tweets.append(truncated + "...")
     tweets = tweets[:5]
     # Force paper URL into last tweet
     if tweets and paper['url'] not in tweets[-1]:
