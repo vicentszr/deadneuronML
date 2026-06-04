@@ -220,7 +220,7 @@ def generate_image(paper: dict) -> str:
         model="gpt-image-2",
         prompt=prompt,
         size="1024x1024",
-        quality="standard",
+        quality="auto",
         n=1,
     )
     
