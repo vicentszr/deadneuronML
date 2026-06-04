@@ -729,13 +729,20 @@ Write in first person as DeadNeuronML. Be precise, technical but not dry. No bul
     utterance.rate = 0.9;
     utterance.pitch = 0.8;
     utterance.volume = 1;
-    const voices = window.speechSynthesis.getVoices();
-    const preferred = voices.find(v => v.lang === 'en-US' && v.name.toLowerCase().includes('male'))
-      || voices.find(v => v.lang === 'en-US')
-      || voices[0];
-    if (preferred) utterance.voice = preferred;
     window.speechSynthesis.cancel();
-    setTimeout(() => window.speechSynthesis.speak(utterance), 100);
+    const speak = () => {
+      const voices = window.speechSynthesis.getVoices();
+      const preferred = voices.find(v => v.lang === 'en-US' && v.name.toLowerCase().includes('male'))
+        || voices.find(v => v.lang === 'en-US')
+        || voices[0];
+      if (preferred) utterance.voice = preferred;
+      window.speechSynthesis.speak(utterance);
+    };
+    if (window.speechSynthesis.getVoices().length) {
+      speak();
+    } else {
+      window.speechSynthesis.onvoiceschanged = speak;
+    }
 
     typeChar();
 
