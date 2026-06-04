@@ -26,6 +26,9 @@ ARXIV_CATEGORIES = [
     "cs.AI",   # Artificial Intelligence
     "cs.CL",   # Computation and Language (NLP)
     "stat.ML", # Statistics - Machine Learning
+    "cs.CV",   # Computer Vision
+    "cs.RO",   # Robotics
+    "cs.NE",   # Neural and Evolutionary Computing
 ]
 
 # ── ArXiv ──────────────────────────────────────────────────────────────────────
