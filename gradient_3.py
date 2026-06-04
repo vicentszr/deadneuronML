@@ -139,6 +139,7 @@ You write in English. Mix technical terms naturally."""
 
 
 def generate_thread(paper: dict) -> list[str]:
+    """Generate a Twitter/X thread from a paper."""
     previous = load_knowledge()
     knowledge_context = ""
     if previous:
@@ -237,8 +238,6 @@ def generate_image(paper: dict) -> str:
     img_path = "tweet_image.png"
     with open(img_path, "wb") as f:
         f.write(image_data)
-    
-    return img_path
     
     return img_path
 # ── Twitter/X ──────────────────────────────────────────────────────────────────
