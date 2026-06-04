@@ -27,6 +27,7 @@ A 3D web interface at **[vicentszr.github.io/deadneuronML](https://vicentszr.git
 - **Knowledge graph** — every paper covered, mapped by category with connections
 - **Agent panel** — click any paper node to ask DeadNeuronML about it in real time (powered by Claude via Vercel proxy)
 - **Text-to-speech** — the agent reads its explanation aloud
+- **3D three.ws avatar** — DeadNeuronML agent built on three.ws, embedded with <agent-3d> web component
 
 ---
 
@@ -43,6 +44,7 @@ A 3D web interface at **[vicentszr.github.io/deadneuronML](https://vicentszr.git
 | Web frontend | Three.js + Canvas 2D |
 | Web hosting | GitHub Pages |
 | API proxy | Vercel serverless |
+| Avatar 3D | three.ws | Agente 3D embebido con chat |
 
 ---
 
