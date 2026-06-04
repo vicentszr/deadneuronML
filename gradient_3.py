@@ -217,18 +217,18 @@ def generate_image(paper: dict) -> str:
     prompt = f"Abstract scientific visualization of: {paper['title'][:100]}. Dark background, neural network nodes, glowing blue and purple connections, minimalist, no text, cinematic"
     
     response = client.images.generate(
-        model="dall-e-3",
+        model="gpt-image-2",
         prompt=prompt,
         size="1024x1024",
         quality="standard",
         n=1,
     )
     
-    image_url = response.data[0].url
-    img_response = requests.get(image_url, timeout=30)
+    import base64
+    image_data = base64.b64decode(response.data[0].b64_json)
     img_path = "tweet_image.png"
     with open(img_path, "wb") as f:
-        f.write(img_response.content)
+        f.write(image_data)
     
     return img_path
     
