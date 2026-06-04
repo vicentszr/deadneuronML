@@ -735,7 +735,7 @@ Write in first person as DeadNeuronML. Be precise, technical but not dry. No bul
       || voices[0];
     if (preferred) utterance.voice = preferred;
     window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utterance);
+    setTimeout(() => window.speechSynthesis.speak(utterance), 100);
 
     typeChar();
 
