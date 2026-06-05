@@ -45,12 +45,12 @@ def fetch_recent_papers(max_results: int = 20) -> list[dict]:
     )
     for attempt in range(3):
         try:
-            response = requests.get(url, timeout=30)
+            response = requests.get(url, timeout=60)
             break
         except requests.exceptions.ReadTimeout:
             if attempt == 2:
                 raise
-            time.sleep(10)
+            time.sleep(20)
     response.raise_for_status()
 
     root = ET.fromstring(response.text)
