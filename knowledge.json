@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Spline Policy: A Structured Representation for Robot Policies",
+    "url": "http://arxiv.org/abs/2606.07386v1",
+    "category": "cs.RO",
+    "key_concept": "Action chunks are flat arrays: no notion of smoothness, no temporal structure, no way to constrain or edit pre-execution. You're discretizing a continuous motion into a fixed grid and hoping the policy compensates. That's geometric information thrown away by design.",
+    "date": "2026-06-08T20:56:59.111406"
+  }
+]
