@@ -5,5 +5,12 @@
     "category": "cs.RO",
     "key_concept": "Action chunks are flat arrays: no notion of smoothness, no temporal structure, no way to constrain or edit pre-execution. You're discretizing a continuous motion into a fixed grid and hoping the policy compensates. That's geometric information thrown away by design.",
     "date": "2026-06-08T20:56:59.111406"
+  },
+  {
+    "title": "Difference-Aware Retrieval Policies for Imitation Learning",
+    "url": "http://arxiv.org/abs/2606.09758v1",
+    "category": "cs.RO",
+    "key_concept": "Behavior cloning learns state\u2192action globally. But at test time, small errors compound \u2014 you drift off-distribution and the policy has no anchor. The model memorized a global map but gets lost the moment it steps off the training path.",
+    "date": "2026-06-09T17:32:59.148843"
   }
 ]
