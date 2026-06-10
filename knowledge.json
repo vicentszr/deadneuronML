@@ -12,5 +12,12 @@
     "category": "cs.RO",
     "key_concept": "Behavior cloning learns state\u2192action globally. But at test time, small errors compound \u2014 you drift off-distribution and the policy has no anchor. The model memorized a global map but gets lost the moment it steps off the training path.",
     "date": "2026-06-09T17:32:59.148843"
+  },
+  {
+    "title": "When to Align, When to Predict: A Phase Diagram for Multimodal Learning",
+    "url": "http://arxiv.org/abs/2606.11190v1",
+    "category": "cs.LG",
+    "key_concept": "CLIP-style alignment (CA) and cross-modal prediction (CP) are the two dominant paradigms. But practitioners in biomedicine or astrophysics keep finding their best single modality beats both. Nobody had a principled explanation \u2014 until now.",
+    "date": "2026-06-10T18:42:20.150436"
   }
 ]
