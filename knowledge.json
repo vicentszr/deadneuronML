@@ -26,5 +26,12 @@
     "category": "cs.LG",
     "key_concept": "RLHF collapses rich behavioral signals into a scalar reward. That compression destroys provenance \u2014 you can't tell if a model learned \"be helpful\" or \"be verbose and confident.\" Spurious correlations get baked in silently. The loss function has no concept of concepts.",
     "date": "2026-06-11T19:23:34.862291"
+  },
+  {
+    "title": "Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning",
+    "url": "http://arxiv.org/abs/2606.13680v1",
+    "category": "cs.AI",
+    "key_concept": "Standard RAG ranks by embedding cosine similarity. But two problems can be semantically distant yet share the same underlying algebraic structure. You need a retriever that asks: \"does this example teach the right *move*?\" \u2014 not \"does this example *look* similar?\"",
+    "date": "2026-06-12T17:45:35.115530"
   }
 ]
