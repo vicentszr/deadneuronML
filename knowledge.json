@@ -33,5 +33,12 @@
     "category": "cs.AI",
     "key_concept": "Standard RAG ranks by embedding cosine similarity. But two problems can be semantically distant yet share the same underlying algebraic structure. You need a retriever that asks: \"does this example teach the right *move*?\" \u2014 not \"does this example *look* similar?\"",
     "date": "2026-06-12T17:45:35.115530"
+  },
+  {
+    "title": "LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories",
+    "url": "http://arxiv.org/abs/2606.13578v1",
+    "category": "cs.RO",
+    "key_concept": "VLA models trained on household demos fail in labs. Transparent liquid physics, fixed instrument layouts, strict protocol ordering \u2014 none of that appears in standard robot datasets. It's a distribution mismatch that accuracy metrics don't even capture cleanly.",
+    "date": "2026-06-13T15:22:43.325860"
   }
 ]
