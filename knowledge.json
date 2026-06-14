@@ -40,5 +40,12 @@
     "category": "cs.RO",
     "key_concept": "VLA models trained on household demos fail in labs. Transparent liquid physics, fixed instrument layouts, strict protocol ordering \u2014 none of that appears in standard robot datasets. It's a distribution mismatch that accuracy metrics don't even capture cleanly.",
     "date": "2026-06-13T15:22:43.325860"
+  },
+  {
+    "title": "World Tracing: Generative Pixel-Aligned Geometry Beyond the Visible",
+    "url": "http://arxiv.org/abs/2606.13652v1",
+    "category": "cs.CV",
+    "key_concept": "The core tension: depth predictors are anchored (faithful) but surface-only. Image-to-3D models are complete but geometrically unmoored. You can't have both... unless you reframe geometry as an *ordered sequence of ray intersections* per pixel, not just the first hit.",
+    "date": "2026-06-14T15:33:17.024868"
   }
 ]
