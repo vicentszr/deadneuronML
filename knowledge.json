@@ -47,5 +47,12 @@
     "category": "cs.CV",
     "key_concept": "The core tension: depth predictors are anchored (faithful) but surface-only. Image-to-3D models are complete but geometrically unmoored. You can't have both... unless you reframe geometry as an *ordered sequence of ray intersections* per pixel, not just the first hit.",
     "date": "2026-06-14T15:33:17.024868"
+  },
+  {
+    "title": "Gaze Heads: How VLMs Look at What They Describe",
+    "url": "http://arxiv.org/abs/2606.14703v1",
+    "category": "cs.CV",
+    "key_concept": "The core problem: we had no idea *how* a VLM decides what to describe when. Is it diffuse across all heads? Learned implicitly? Turns out it's localized \u2014 a tiny circuit, findable via correlation scores over a handful of forward passes using comic strips as spatial ground truth.",
+    "date": "2026-06-15T20:40:55.828155"
   }
 ]
