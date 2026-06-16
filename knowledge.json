@@ -54,5 +54,12 @@
     "category": "cs.CV",
     "key_concept": "The core problem: we had no idea *how* a VLM decides what to describe when. Is it diffuse across all heads? Learned implicitly? Turns out it's localized \u2014 a tiny circuit, findable via correlation scores over a handful of forward passes using comic strips as spatial ground truth.",
     "date": "2026-06-15T20:40:55.828155"
+  },
+  {
+    "title": "Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes",
+    "url": "http://arxiv.org/abs/2606.17043v1",
+    "category": "cs.RO",
+    "key_concept": "The core problem: one binary reward conflates two things \u2014 did the policy *survive* (viability) and did it *move fast* (efficiency)? Once you're succeeding, the gradient goes silent. You can't improve speed from a signal that just says \"yes.\"",
+    "date": "2026-06-16T20:24:11.923333"
   }
 ]
