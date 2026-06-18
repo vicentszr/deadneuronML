@@ -61,5 +61,12 @@
     "category": "cs.RO",
     "key_concept": "The core problem: one binary reward conflates two things \u2014 did the policy *survive* (viability) and did it *move fast* (efficiency)? Once you're succeeding, the gradient goes silent. You can't improve speed from a signal that just says \"yes.\"",
     "date": "2026-06-16T20:24:11.923333"
+  },
+  {
+    "title": "Explaining Attention with Program Synthesis",
+    "url": "http://arxiv.org/abs/2606.19317v1",
+    "category": "cs.AI",
+    "key_concept": "Attention heads are black boxes: we know *what* they output, not *why*. The goal is symbolic explanations \u2014 rules a human can read and verify. The gap between \"this head attends to previous nouns\" and a formal, testable program has always been the hard part.",
+    "date": "2026-06-18T18:20:14.282456"
   }
 ]
