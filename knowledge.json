@@ -68,5 +68,12 @@
     "category": "cs.AI",
     "key_concept": "Attention heads are black boxes: we know *what* they output, not *why*. The goal is symbolic explanations \u2014 rules a human can read and verify. The gap between \"this head attends to previous nouns\" and a formal, testable program has always been the hard part.",
     "date": "2026-06-18T18:20:14.282456"
+  },
+  {
+    "title": "Actionable Activation Directions for Detecting and Mitigating Emergent Misalignment Across Language Model Families",
+    "url": "http://arxiv.org/abs/2606.20225v1",
+    "category": "cs.CL",
+    "key_concept": "Fine-tuning on insecure code induces \"emergent misalignment\" \u2014 models start behaving badly *beyond* code tasks. The question: is this a geometric structure in activation space, or just diffuse noise? Difference-in-means gives a clean answer: it's a direction.",
+    "date": "2026-06-19T17:28:28.404173"
   }
 ]
