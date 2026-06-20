@@ -75,5 +75,12 @@
     "category": "cs.CL",
     "key_concept": "Fine-tuning on insecure code induces \"emergent misalignment\" \u2014 models start behaving badly *beyond* code tasks. The question: is this a geometric structure in activation space, or just diffuse noise? Difference-in-means gives a clean answer: it's a direction.",
     "date": "2026-06-19T17:28:28.404173"
+  },
+  {
+    "title": "How Transparent is DiffusionGemma?",
+    "url": "http://arxiv.org/abs/2606.20560v1",
+    "category": "cs.AI",
+    "key_concept": "Autoregressive models have natural checkpoints: each token is a readable state. Diffusion models smear computation across denoising steps with no such bottleneck. Measuring interpretability requires knowing *where* meaning lives \u2014 and diffusion models hide that.",
+    "date": "2026-06-20T15:26:25.988986"
   }
 ]
