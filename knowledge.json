@@ -82,5 +82,12 @@
     "category": "cs.AI",
     "key_concept": "Autoregressive models have natural checkpoints: each token is a readable state. Diffusion models smear computation across denoising steps with no such bottleneck. Measuring interpretability requires knowing *where* meaning lives \u2014 and diffusion models hide that.",
     "date": "2026-06-20T15:26:25.988986"
+  },
+  {
+    "title": "LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents",
+    "url": "http://arxiv.org/abs/2606.20529v1",
+    "category": "cs.AI",
+    "key_concept": "Standard agents dump everything \u2014 observations, tool returns, policies \u2014 into one flat prompt. The model must re-derive what's true *now* from what was true *then*. That's not memory. That's archaeology. Stale facts slip through undetected.",
+    "date": "2026-06-21T11:50:25.827991"
   }
 ]
