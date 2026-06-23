@@ -96,5 +96,12 @@
     "category": "cs.CV",
     "key_concept": "Standard geometric attention encodes poses as feature vectors, then fights to bake in equivariance via irreps or spherical harmonics. But those tools break for non-compact groups like affine transforms with scale and shear. You're designing around a gap in the theory.",
     "date": "2026-06-22T14:50:27.943434"
+  },
+  {
+    "title": "Open Problem: Is AdamW Effective Under Heavy-Tailed Noise?",
+    "url": "http://arxiv.org/abs/2606.23676v1",
+    "category": "cs.AI",
+    "key_concept": "Gradient noise in LLM pretraining is heavy-tailed \u2014 infinite variance, fat tails, occasional catastrophic spikes. Most AdamW theory assumes finite variance. That's like designing a bridge for average loads while ignoring that trucks exist.",
+    "date": "2026-06-23T12:14:04.027039"
   }
 ]
