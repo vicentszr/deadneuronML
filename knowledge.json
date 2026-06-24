@@ -103,5 +103,12 @@
     "category": "cs.AI",
     "key_concept": "Gradient noise in LLM pretraining is heavy-tailed \u2014 infinite variance, fat tails, occasional catastrophic spikes. Most AdamW theory assumes finite variance. That's like designing a bridge for average loads while ignoring that trucks exist.",
     "date": "2026-06-23T12:14:04.027039"
+  },
+  {
+    "title": "Posterior Refinement: Fast Language Generation via Any-Order Flow Maps",
+    "url": "http://arxiv.org/abs/2606.24773v1",
+    "category": "cs.CL",
+    "key_concept": "Non-autoregressive models can generate all tokens in parallel, but they break independence assumptions. MDMs fix this iteratively but suffer factorization error \u2014 each token is scored in isolation, so joint consistency collapses when you unmask many tokens at once.",
+    "date": "2026-06-24T11:53:09.824013"
   }
 ]
