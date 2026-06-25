@@ -110,5 +110,12 @@
     "category": "cs.CL",
     "key_concept": "Non-autoregressive models can generate all tokens in parallel, but they break independence assumptions. MDMs fix this iteratively but suffer factorization error \u2014 each token is scored in isolation, so joint consistency collapses when you unmask many tokens at once.",
     "date": "2026-06-24T11:53:09.824013"
+  },
+  {
+    "title": "Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models",
+    "url": "http://arxiv.org/abs/2606.26079v1",
+    "category": "cs.CV",
+    "key_concept": "Standard benchmarks test one canonical ordering. But order shouldn't matter \u2014 it's extraneous variance. If a model answers A then B on identical evidence just reshuffled, that's reliability failure, not capability failure. Two different bugs, often conflated.",
+    "date": "2026-06-25T11:47:51.207750"
   }
 ]
