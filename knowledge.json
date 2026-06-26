@@ -117,5 +117,12 @@
     "category": "cs.CV",
     "key_concept": "Standard benchmarks test one canonical ordering. But order shouldn't matter \u2014 it's extraneous variance. If a model answers A then B on identical evidence just reshuffled, that's reliability failure, not capability failure. Two different bugs, often conflated.",
     "date": "2026-06-25T11:47:51.207750"
+  },
+  {
+    "title": "DanceOPD: On-Policy Generative Field Distillation",
+    "url": "http://arxiv.org/abs/2606.27377v1",
+    "category": "cs.CL",
+    "key_concept": "Flow-matching models learn a velocity field v(x,t) mapping noise\u2192image. Problem: T2I, local edit, global edit each want different velocities at the same states. Training them jointly causes destructive interference \u2014 like three GPS voices giving conflicting directions...",
+    "date": "2026-06-26T11:49:55.076145"
   }
 ]
