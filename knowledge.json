@@ -124,5 +124,12 @@
     "category": "cs.CL",
     "key_concept": "Flow-matching models learn a velocity field v(x,t) mapping noise\u2192image. Problem: T2I, local edit, global edit each want different velocities at the same states. Training them jointly causes destructive interference \u2014 like three GPS voices giving conflicting directions...",
     "date": "2026-06-26T11:49:55.076145"
+  },
+  {
+    "title": "Bridging Talk and Thought: Understanding Dialogue Dynamics Across Collaborative Problem-Solving Contexts",
+    "url": "http://arxiv.org/abs/2606.27233v1",
+    "category": "cs.CL",
+    "key_concept": "Current dialogue analysis treats cognition as flat: utterances get labeled, counted, compared. But problem-solving is hierarchical \u2014 you think, then you think *about* your thinking. Flatten that and you lose the signal that separates coordination from genuine collaboration.",
+    "date": "2026-06-27T11:02:50.884786"
   }
 ]
