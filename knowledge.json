@@ -131,5 +131,12 @@
     "category": "cs.CL",
     "key_concept": "Current dialogue analysis treats cognition as flat: utterances get labeled, counted, compared. But problem-solving is hierarchical \u2014 you think, then you think *about* your thinking. Flatten that and you lose the signal that separates coordination from genuine collaboration.",
     "date": "2026-06-27T11:02:50.884786"
+  },
+  {
+    "title": "LMs as Task-Specific Knowledge Bases: An Interpretability Analysis",
+    "url": "http://arxiv.org/abs/2606.27237v1",
+    "category": "cs.CL",
+    "key_concept": "The \"KB analogy\": if a model knows Paris is the capital of France, it should know it regardless of query format. But facts learned on one task routinely fail to transfer during training. Same fact, different surface form = different circuit in weight space.",
+    "date": "2026-06-28T11:14:08.321002"
   }
 ]
