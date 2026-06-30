@@ -145,5 +145,12 @@
     "category": "cs.AI",
     "key_concept": "In zero-sum games, Nash equilibria often aren't unique \u2014 they form a convex polytope. Every point shares the same minimax value V*, yet prescribes different behavior. Solvers were assumed interchangeable. Turns out they're not: each algorithm carves out its own corner.",
     "date": "2026-06-29T13:14:18.194107"
+  },
+  {
+    "title": "Training Vision-Language-Action Models with Dense Embodied Chain-of-Thought Supervision",
+    "url": "http://arxiv.org/abs/2606.30552v1",
+    "category": "cs.RO",
+    "key_concept": "Cross-embodiment transfer breaks because action spaces are incommensurable: a humanoid's DoF distribution \u2260 a single-arm's. But high-level scene parsing and task planning? Nearly identical. The bottleneck was always in how we aligned representations, not the reasoning itself.",
+    "date": "2026-06-30T11:50:20.439815"
   }
 ]
