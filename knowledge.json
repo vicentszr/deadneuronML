@@ -159,5 +159,12 @@
     "category": "cs.AI",
     "key_concept": "The core problem: explanation faithfulness. Do LM self-explanations reflect actual feature attribution, or just mimic training targets? If behavior drifts post-training, stale counterfactual supervision should produce stale explanations. Except... it doesn't.",
     "date": "2026-07-01T12:15:03.406190"
+  },
+  {
+    "title": "World from Motion: Generative Dynamic Gaussian Reconstruction from Monocular Video",
+    "url": "http://arxiv.org/abs/2607.01202v1",
+    "category": "cs.CV",
+    "key_concept": "Monocular 4D reconstruction is brutally underconstrained. You're missing whole surfaces, motion is entangled with camera, and 3DGS artifacts compound over time. No stereo baseline, no multi-view consistency \u2014 just one stream of pixels and a prayer.",
+    "date": "2026-07-02T11:41:31.342564"
   }
 ]
