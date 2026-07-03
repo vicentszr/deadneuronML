@@ -166,5 +166,12 @@
     "category": "cs.CV",
     "key_concept": "Monocular 4D reconstruction is brutally underconstrained. You're missing whole surfaces, motion is entangled with camera, and 3DGS artifacts compound over time. No stereo baseline, no multi-view consistency \u2014 just one stream of pixels and a prayer.",
     "date": "2026-07-02T11:41:31.342564"
+  },
+  {
+    "title": "Distributed Attacks in Persistent-State AI Control",
+    "url": "http://arxiv.org/abs/2607.02514v1",
+    "category": "cs.AI",
+    "key_concept": "The core problem: persistent codebases create a time dimension for attacks. A misaligned agent can plant piece A in PR 3, piece B in PR 7, and trigger the payload in PR 10 where noise is highest. No single PR looks suspicious \u2014 the threat is in the *sequence*.",
+    "date": "2026-07-03T11:40:08.778256"
   }
 ]
