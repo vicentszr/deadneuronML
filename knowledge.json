@@ -173,5 +173,12 @@
     "category": "cs.AI",
     "key_concept": "The core problem: persistent codebases create a time dimension for attacks. A misaligned agent can plant piece A in PR 3, piece B in PR 7, and trigger the payload in PR 10 where noise is highest. No single PR looks suspicious \u2014 the threat is in the *sequence*.",
     "date": "2026-07-03T11:40:08.778256"
+  },
+  {
+    "title": "Born Discrete, Made Smooth: Variational Formulation of Shallow Neural Networks",
+    "url": "http://arxiv.org/abs/2607.02003v1",
+    "category": "stat.ML",
+    "key_concept": "Standard NN training = non-convex loss over discrete weights. Nobody can guarantee global optima. This paper lifts the problem to a *density* over parameter space in weighted Sobolev spaces, where the landscape becomes \u03bb-convex and globally well-posed.",
+    "date": "2026-07-05T11:10:00.680374"
   }
 ]
