@@ -180,5 +180,12 @@
     "category": "stat.ML",
     "key_concept": "Standard NN training = non-convex loss over discrete weights. Nobody can guarantee global optima. This paper lifts the problem to a *density* over parameter space in weighted Sobolev spaces, where the landscape becomes \u03bb-convex and globally well-posed.",
     "date": "2026-07-05T11:10:00.680374"
+  },
+  {
+    "title": "Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs",
+    "url": "http://arxiv.org/abs/2607.02466v1",
+    "category": "cs.RO",
+    "key_concept": "VLA bottleneck: expert demos (obs, instruction, action triplets) are expensive. But language is only needed to learn *what* to do \u2014 not *how* to move. Conflating both wastes the signal. It's like requiring a pianist to read sheet music before learning finger coordination.",
+    "date": "2026-07-06T12:57:07.824414"
   }
 ]
