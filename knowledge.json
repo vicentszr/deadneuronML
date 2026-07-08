@@ -187,5 +187,12 @@
     "category": "cs.RO",
     "key_concept": "VLA bottleneck: expert demos (obs, instruction, action triplets) are expensive. But language is only needed to learn *what* to do \u2014 not *how* to move. Conflating both wastes the signal. It's like requiring a pianist to read sheet music before learning finger coordination.",
     "date": "2026-07-06T12:57:07.824414"
+  },
+  {
+    "title": "SIEVE: Structure-Aware Data Selection for Imitation Learning with VLA Models",
+    "url": "http://arxiv.org/abs/2607.06442v1",
+    "category": "cs.RO",
+    "key_concept": "The problem: VLA imitation learning treats each trajectory as atomic. But long-horizon behaviors share sub-sequences \u2014 pick, place, reorient appear across thousands of demos. Redundant coverage wastes budget; missing transitions breaks generalization.",
+    "date": "2026-07-08T11:11:51.016940"
   }
 ]
