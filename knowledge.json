@@ -194,5 +194,12 @@
     "category": "cs.RO",
     "key_concept": "The problem: VLA imitation learning treats each trajectory as atomic. But long-horizon behaviors share sub-sequences \u2014 pick, place, reorient appear across thousands of demos. Redundant coverage wastes budget; missing transitions breaks generalization.",
     "date": "2026-07-08T11:11:51.016940"
+  },
+  {
+    "title": "Fast Rates for Semi-Supervised Learning via Data-Augmentation Graph Regularization",
+    "url": "http://arxiv.org/abs/2607.07513v1",
+    "category": "stat.ML",
+    "key_concept": "Supervised learning converges at O(1/\u221an_L). This paper proves semi-supervised learning achieves O(1/n_L) \u2014 a quadratically faster rate in label count. The key: unlabeled data isn't noise, it's geometric structure that stabilizes the estimator fundamentally.",
+    "date": "2026-07-09T12:13:49.952956"
   }
 ]
