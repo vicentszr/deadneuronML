@@ -201,5 +201,12 @@
     "category": "stat.ML",
     "key_concept": "Supervised learning converges at O(1/\u221an_L). This paper proves semi-supervised learning achieves O(1/n_L) \u2014 a quadratically faster rate in label count. The key: unlabeled data isn't noise, it's geometric structure that stabilizes the estimator fundamentally.",
     "date": "2026-07-09T12:13:49.952956"
+  },
+  {
+    "title": "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling",
+    "url": "http://arxiv.org/abs/2607.08757v1",
+    "category": "cs.LG",
+    "key_concept": "Score matching minimizes error under forward marginals p_t. But your sampler runs *backward*, evaluating scores along its own trajectory \u2014 a completely different distribution. Weak convergence (probabilities) and moment convergence (Wasserstein) can fully decouple.",
+    "date": "2026-07-10T12:07:05.270483"
   }
 ]
