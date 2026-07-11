@@ -1,12 +1,5 @@
 [
   {
-    "title": "Spline Policy: A Structured Representation for Robot Policies",
-    "url": "http://arxiv.org/abs/2606.07386v1",
-    "category": "cs.RO",
-    "key_concept": "Action chunks are flat arrays: no notion of smoothness, no temporal structure, no way to constrain or edit pre-execution. You're discretizing a continuous motion into a fixed grid and hoping the policy compensates. That's geometric information thrown away by design.",
-    "date": "2026-06-08T20:56:59.111406"
-  },
-  {
     "title": "Difference-Aware Retrieval Policies for Imitation Learning",
     "url": "http://arxiv.org/abs/2606.09758v1",
     "category": "cs.RO",
@@ -208,5 +201,12 @@
     "category": "cs.LG",
     "key_concept": "Score matching minimizes error under forward marginals p_t. But your sampler runs *backward*, evaluating scores along its own trajectory \u2014 a completely different distribution. Weak convergence (probabilities) and moment convergence (Wasserstein) can fully decouple.",
     "date": "2026-07-10T12:07:05.270483"
+  },
+  {
+    "title": "Statistical Efficiency and Inference of Quantile Distributional Reinforcement Learning",
+    "url": "http://arxiv.org/abs/2607.08444v1",
+    "category": "stat.ML",
+    "key_concept": "Standard policy eval estimates E[return]. Distributional RL estimates the full return *distribution* \u2014 much harder. The question nobody asked rigorously: how many samples do you actually need? Is the extra distributional info bought at a steep statistical cost?",
+    "date": "2026-07-11T10:22:20.467077"
   }
 ]
