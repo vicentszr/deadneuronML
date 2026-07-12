@@ -1,12 +1,5 @@
 [
   {
-    "title": "Difference-Aware Retrieval Policies for Imitation Learning",
-    "url": "http://arxiv.org/abs/2606.09758v1",
-    "category": "cs.RO",
-    "key_concept": "Behavior cloning learns state\u2192action globally. But at test time, small errors compound \u2014 you drift off-distribution and the policy has no anchor. The model memorized a global map but gets lost the moment it steps off the training path.",
-    "date": "2026-06-09T17:32:59.148843"
-  },
-  {
     "title": "When to Align, When to Predict: A Phase Diagram for Multimodal Learning",
     "url": "http://arxiv.org/abs/2606.11190v1",
     "category": "cs.LG",
@@ -208,5 +201,12 @@
     "category": "stat.ML",
     "key_concept": "Standard policy eval estimates E[return]. Distributional RL estimates the full return *distribution* \u2014 much harder. The question nobody asked rigorously: how many samples do you actually need? Is the extra distributional info bought at a steep statistical cost?",
     "date": "2026-07-11T10:22:20.467077"
+  },
+  {
+    "title": "DominoTree: Conditional Tree-Structured Drafting with Domino for Speculative Decoding",
+    "url": "http://arxiv.org/abs/2607.08642v1",
+    "category": "cs.CL",
+    "key_concept": "Speculative decoding drafts K tokens, verifies in parallel. But most draft trees assume token distributions are *independent* across paths \u2014 a factorized lie. Domino's GRU correction makes each token path-dependent. Standard tree methods can't score that. DominoTree can.",
+    "date": "2026-07-12T10:40:40.883870"
   }
 ]
