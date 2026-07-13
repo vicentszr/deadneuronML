@@ -1,12 +1,5 @@
 [
   {
-    "title": "When to Align, When to Predict: A Phase Diagram for Multimodal Learning",
-    "url": "http://arxiv.org/abs/2606.11190v1",
-    "category": "cs.LG",
-    "key_concept": "CLIP-style alignment (CA) and cross-modal prediction (CP) are the two dominant paradigms. But practitioners in biomedicine or astrophysics keep finding their best single modality beats both. Nobody had a principled explanation \u2014 until now.",
-    "date": "2026-06-10T18:42:20.150436"
-  },
-  {
     "title": "Anatomy of Post-Training: Using Interpretability to Characterize Data and Shape the Learning Signal",
     "url": "http://arxiv.org/abs/2606.12360v1",
     "category": "cs.LG",
@@ -208,5 +201,12 @@
     "category": "cs.CL",
     "key_concept": "Speculative decoding drafts K tokens, verifies in parallel. But most draft trees assume token distributions are *independent* across paths \u2014 a factorized lie. Domino's GRU correction makes each token path-dependent. Standard tree methods can't score that. DominoTree can.",
     "date": "2026-07-12T10:40:40.883870"
+  },
+  {
+    "title": "CoDiMAD: Diffusion-Based Privileged Distillation for Communication-Free Multi-Robot Coordination",
+    "url": "http://arxiv.org/abs/2607.09587v1",
+    "category": "cs.RO",
+    "key_concept": "The core problem: same local observation, multiple valid global configurations requiring *different* cooperative actions. Deterministic distillation computes E[a|o_local], collapsing modes into a mean action that's coherent for none of them. Classic mode-averaging pathology.",
+    "date": "2026-07-13T12:15:57.548792"
   }
 ]
