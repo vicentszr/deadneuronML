@@ -1,12 +1,5 @@
 [
   {
-    "title": "Anatomy of Post-Training: Using Interpretability to Characterize Data and Shape the Learning Signal",
-    "url": "http://arxiv.org/abs/2606.12360v1",
-    "category": "cs.LG",
-    "key_concept": "RLHF collapses rich behavioral signals into a scalar reward. That compression destroys provenance \u2014 you can't tell if a model learned \"be helpful\" or \"be verbose and confident.\" Spurious correlations get baked in silently. The loss function has no concept of concepts.",
-    "date": "2026-06-11T19:23:34.862291"
-  },
-  {
     "title": "Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning",
     "url": "http://arxiv.org/abs/2606.13680v1",
     "category": "cs.AI",
@@ -208,5 +201,12 @@
     "category": "cs.RO",
     "key_concept": "The core problem: same local observation, multiple valid global configurations requiring *different* cooperative actions. Deterministic distillation computes E[a|o_local], collapsing modes into a mean action that's coherent for none of them. Classic mode-averaging pathology.",
     "date": "2026-07-13T12:15:57.548792"
+  },
+  {
+    "title": "Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias",
+    "url": "http://arxiv.org/abs/2607.11871v1",
+    "category": "cs.CL",
+    "key_concept": "Current LLM-as-judge research pokes inputs and watches scores wiggle. But that's just I/O correlation. The real question: where does bias *live* in the model? Turns out it's a recoverable linear subspace in hidden states \u2014 not scattered, not entangled. Geometrically clean.",
+    "date": "2026-07-14T10:54:38.823893"
   }
 ]
