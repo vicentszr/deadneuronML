@@ -1,12 +1,5 @@
 [
   {
-    "title": "Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning",
-    "url": "http://arxiv.org/abs/2606.13680v1",
-    "category": "cs.AI",
-    "key_concept": "Standard RAG ranks by embedding cosine similarity. But two problems can be semantically distant yet share the same underlying algebraic structure. You need a retriever that asks: \"does this example teach the right *move*?\" \u2014 not \"does this example *look* similar?\"",
-    "date": "2026-06-12T17:45:35.115530"
-  },
-  {
     "title": "LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories",
     "url": "http://arxiv.org/abs/2606.13578v1",
     "category": "cs.RO",
@@ -208,5 +201,12 @@
     "category": "cs.CL",
     "key_concept": "Current LLM-as-judge research pokes inputs and watches scores wiggle. But that's just I/O correlation. The real question: where does bias *live* in the model? Turns out it's a recoverable linear subspace in hidden states \u2014 not scattered, not entangled. Geometrically clean.",
     "date": "2026-07-14T10:54:38.823893"
+  },
+  {
+    "title": "Resist and Update: Counterfactual Report Coordinates for Incentive-Compatible LLMs",
+    "url": "http://arxiv.org/abs/2607.12985v1",
+    "category": "cs.AI",
+    "key_concept": "The core problem: LLMs conflate *pressure* (user insistence) with *evidence* (reliable new info). Both look like disagreement signals. A proper agent should resist the first and update on the second. Current training doesn't enforce this distinction at the causal level.",
+    "date": "2026-07-15T10:58:46.926518"
   }
 ]
