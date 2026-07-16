@@ -1,12 +1,5 @@
 [
   {
-    "title": "LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories",
-    "url": "http://arxiv.org/abs/2606.13578v1",
-    "category": "cs.RO",
-    "key_concept": "VLA models trained on household demos fail in labs. Transparent liquid physics, fixed instrument layouts, strict protocol ordering \u2014 none of that appears in standard robot datasets. It's a distribution mismatch that accuracy metrics don't even capture cleanly.",
-    "date": "2026-06-13T15:22:43.325860"
-  },
-  {
     "title": "World Tracing: Generative Pixel-Aligned Geometry Beyond the Visible",
     "url": "http://arxiv.org/abs/2606.13652v1",
     "category": "cs.CV",
@@ -208,5 +201,12 @@
     "category": "cs.AI",
     "key_concept": "The core problem: LLMs conflate *pressure* (user insistence) with *evidence* (reliable new info). Both look like disagreement signals. A proper agent should resist the first and update on the second. Current training doesn't enforce this distinction at the causal level.",
     "date": "2026-07-15T10:58:46.926518"
+  },
+  {
+    "title": "How to Guide LLM Generation: Dual-Surrogate Guided Search for Automated Heuristic Design",
+    "url": "http://arxiv.org/abs/2607.13911v1",
+    "category": "cs.NE",
+    "key_concept": "Each LLM query costs tokens + eval budget. Existing AHD methods pick operator-parent pairs with fixed rules \u2014 essentially guessing. It's like running Bayesian optimization but never modeling the acquisition function. You're burning budget on uninformed shots.",
+    "date": "2026-07-16T11:07:58.922610"
   }
 ]
