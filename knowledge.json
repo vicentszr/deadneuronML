@@ -1,12 +1,5 @@
 [
   {
-    "title": "Gaze Heads: How VLMs Look at What They Describe",
-    "url": "http://arxiv.org/abs/2606.14703v1",
-    "category": "cs.CV",
-    "key_concept": "The core problem: we had no idea *how* a VLM decides what to describe when. Is it diffuse across all heads? Learned implicitly? Turns out it's localized \u2014 a tiny circuit, findable via correlation scores over a handful of forward passes using comic strips as spatial ground truth.",
-    "date": "2026-06-15T20:40:55.828155"
-  },
-  {
     "title": "Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes",
     "url": "http://arxiv.org/abs/2606.17043v1",
     "category": "cs.RO",
@@ -208,5 +201,12 @@
     "category": "cs.CL",
     "key_concept": "RAG evaluation scores docs by asking: does this doc help answer the question directly? But in multi-step agentic search, a doc's value often lies in *what query it enables next*, not what it answers now. Static utility is blind to this causal chain structure entirely.",
     "date": "2026-07-17T10:55:29.500337"
+  },
+  {
+    "title": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+    "url": "http://arxiv.org/abs/2607.15277v1",
+    "category": "cs.CL",
+    "key_concept": "The law of total probability says: P(Y) = \u03a3 P(Y|subgroup) \u00d7 P(subgroup). If an LLM is a proper conditional estimator, estimates must be consistent across partitions. Spoiler: they're wildly not. This isn't a prompt formatting issue \u2014 it's a structural incoherence.",
+    "date": "2026-07-18T10:25:44.745597"
   }
 ]
